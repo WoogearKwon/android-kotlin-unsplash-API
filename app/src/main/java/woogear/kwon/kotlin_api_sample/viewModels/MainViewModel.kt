@@ -16,7 +16,7 @@ import woogear.kwon.kotlin_api_sample.utils.APIInterface
 /**
  * ViewModel for Unsplash Image API
  * This will fetch 20 photos by default from  -> https://api.unsplash.com/photos
- * Also can fetch searched image from  -> https://api.unsplash.com/search/photos?query=...
+ * Also can fetch searched images from  -> https://api.unsplash.com/search/photos?query=...
  * */
 
 class MainViewModel : AndroidViewModel{

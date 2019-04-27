@@ -47,8 +47,10 @@ class MainActivity : AppCompatActivity() {
         initAdapter()
         et_search.text.toString()
         btn_search.setOnClickListener { v ->
-            layout_progressbar.visibility = View.VISIBLE
-            viewModel.searchImages(et_search.text.toString())
+            if(!et_search.text.toString().equals("")){
+                layout_progressbar.visibility = View.VISIBLE
+                viewModel.searchImages(et_search.text.toString())
+            }
         }
     }
 }
